@@ -18,7 +18,7 @@ class documentsFactory extends Factory
     {
          $max =count(\App\Models\tipoDocument::all());
         return [
-            'titulo' => $this->faker->title(),
+            'titulo' => $this->faker->sentence($nbWords = 3),
             'nome_arquivo'=> $this->faker->word().'_'.$this->faker->word().'.txt' ,
             'tipo_id'=>rand( 1, $max)
         ];
