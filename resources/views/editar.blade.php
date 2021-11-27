@@ -5,13 +5,15 @@
     <div class="row">
         <div class="col-6 m-auto">
             <div class="text-center"><h1>Editar</h1></div>
-            @isset($erros)
-                <div class="container bg-danger">
-                    @foreach ($erros as $erros)
-                        {{$erros}}
+            @if(isset($errors) && count($errors) >0)
+            
+                <div class="container alert alert-danger">
+                    @foreach ($errors->all() as $item)
+                        {{$item}}<br>
                     @endforeach
+                    
                 </div>
-            @endisset
+            @endif
             <form action="{{url("/docs/$doc->id")}}" method="POST">
                 @csrf
                 @method('PUT')

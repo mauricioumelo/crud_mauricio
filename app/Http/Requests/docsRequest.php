@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class docsCad extends FormRequest
+class docsRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -24,9 +24,9 @@ class docsCad extends FormRequest
     public function rules()
     {
         return [
-            'titulo'=>'require',
-            'tipo_id'=>'require',
-            'nome_arquivo'=>'require',
+            'titulo'=>'required',
+            'tipo'=>'required',
+            'nome'=>'required',
         ];
     }
 }

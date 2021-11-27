@@ -3,8 +3,8 @@
 namespace App\Http\Controllers;
 use App\Models\documents;
 use App\Models\tipoDocument;
-use Illuminate\Http\Request;
-use app\Http\Requests\docsCad;
+
+use App\Http\Requests\docsRequest;
 
 class docsController extends Controller
 {     
@@ -22,7 +22,7 @@ class docsController extends Controller
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return \
      */
     public function index()
     {
@@ -48,7 +48,7 @@ class docsController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(docsRequest $request)
     {
         
         $cad=  $this->objDocument->create([
@@ -93,9 +93,9 @@ class docsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(docsRequest $request, $id)
     {
-        $upd=$doc= $this->objDocument->where(['id'=>$id])->update([
+        $upd= $this->objDocument->where(['id'=>$id])->update([
             'titulo' =>$request->titulo,
             'nome_arquivo' =>$request->nome,
             'tipo_id' =>$request->tipo,
