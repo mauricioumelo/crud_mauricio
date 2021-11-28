@@ -2,7 +2,7 @@
 
 - As questões podem ser vizualizadas atraves do menu, cliando em questões 
 
-- Roda os comando 
+- Roda os comandos 
 - migrate 
 `php artisan migrate`
 
