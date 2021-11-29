@@ -116,7 +116,7 @@
                     <h5 class="modal-title" id="questaoLabel">Questão 1</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body">
+                <div class="modal-body bg-dark" style="color:white">
                     $array1 = [1, 2, 4, 6, 7, 9, 11, 14, 24, 26];<br>
                     echo ' $array=[1,2,4,6,7,9,11,14,24,26]  O maior numero -> ' . max($array1) . '  O menor ->' . min($array1);
                 </div>
@@ -135,7 +135,7 @@
                     <h5 class="modal-title" id="questao2Label">Questão 2</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body">
+                <div class="modal-body bg-dark" style="color:white">
                     $array2 = [];<br>
                     for ($i = 0; $i < 6; $i++) {<br>
                         $array2[$i] = rand(10, 20);<br>
@@ -167,7 +167,7 @@
                     <h5 class="modal-title" id="questao3Label">Questão 3</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body">
+                <div class="modal-body bg-dark" style="color:white">
                     class AssinaDocumentoClass<br>
                     {<br>
                     public $ProprietarioDocumento;<br>
@@ -205,7 +205,7 @@
                     <h5 class="modal-title" id="questao4lLabel">Questão 4</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body">
+                <div class="modal-body bg-dark" style="color:white">
 
                     $nome = 'FabricaInfo';<br>
                     <br>
